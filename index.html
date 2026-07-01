@@ -1,4 +1,12 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaTrade</title>
+
+<style>
 *{
 margin:0;
 padding:0;
@@ -12,47 +20,51 @@ color:white;
 }
 
 header{
+background:#11151c;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px;
-background:#11151c;
+padding:15px 25px;
 flex-wrap:wrap;
 }
 
 .logo{
-color:#f0b90b;
-font-size:28px;
+font-size:32px;
 font-weight:bold;
+color:#f0b90b;
 }
 
 nav{
 display:flex;
-gap:15px;
+gap:20px;
 flex-wrap:wrap;
 }
 
 nav a{
 color:white;
 text-decoration:none;
+font-size:18px;
+}
+
+nav a:hover{
+color:#f0b90b;
 }
 
 .buttons{
 display:flex;
 gap:10px;
-margin-top:10px;
 }
 
 button{
-padding:10px 18px;
+padding:10px 20px;
 border:none;
 border-radius:8px;
-font-weight:bold;
 cursor:pointer;
+font-weight:bold;
 }
 
 .login{
-background:none;
+background:transparent;
 border:1px solid #f0b90b;
 color:white;
 }
@@ -64,24 +76,121 @@ color:black;
 
 .hero{
 text-align:center;
-padding:60px 20px;
+padding:80px 20px;
 }
 
 .hero h1{
-font-size:40px;
+font-size:42px;
 color:#f0b90b;
+margin-bottom:15px;
 }
 
 .hero p{
-margin-top:15px;
-font-size:18px;
+font-size:20px;
 color:#ccc;
+margin-bottom:25px;
 }
 
 .start{
-margin-top:25px;
 background:#f0b90b;
 color:black;
-padding:14px 28px;
+padding:15px 35px;
 font-size:18px;
 }
+
+.cards{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+padding:40px;
+}
+
+.card{
+background:#161a1e;
+padding:20px;
+border-radius:12px;
+width:220px;
+text-align:center;
+border:1px solid #2d2f36;
+}
+
+.card h2{
+color:#f0b90b;
+margin-bottom:10px;
+}
+
+.price{
+font-size:26px;
+margin:10px 0;
+}
+
+.green{
+color:#00d084;
+}
+
+footer{
+margin-top:40px;
+padding:20px;
+text-align:center;
+background:#11151c;
+color:#888;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🚀 NovaTrade</div>
+
+<nav>
+<a href="#">الرئيسية</a>
+<a href="#">الأسواق</a>
+<a href="#">التداول</a>
+<a href="#">المحفظة</a>
+</nav>
+
+<div class="buttons">
+<button class="login">تسجيل الدخول</button>
+<button class="signup">ابدأ الآن</button>
+</div>
+
+</header>
+
+<section class="hero">
+<h1>تداول العملات الرقمية بثقة</h1>
+<p>منصة NovaTrade الحديثة لتداول العملات الرقمية.</p>
+<button class="start">ابدأ التداول</button>
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h2>Bitcoin</h2>
+<div class="price">$67,420</div>
+<div class="green">+2.6%</div>
+</div>
+
+<div class="card">
+<h2>Ethereum</h2>
+<div class="price">$3,420</div>
+<div class="green">+1.9%</div>
+</div>
+
+<div class="card">
+<h2>BNB</h2>
+<div class="price">$615</div>
+<div class="green">+0.8%</div>
+</div>
+
+</section>
+
+<footer>
+© 2025 NovaTrade
+</footer>
+
+</body>
+</html>
