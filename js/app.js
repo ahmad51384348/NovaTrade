@@ -39,3 +39,45 @@ setInterval(() => {
   updatePrice("sol", prices.sol);
 
 }, 2000);
+// أسعار ابتدائية
+let prices = {
+  btc: 110000,
+  eth: 4200,
+  bnb: 720,
+  sol: 180
+};
+
+function updatePrice(id, value) {
+  const el = document.getElementById(id);
+  if (!el) return;
+
+  el.innerHTML = "$" + value.toLocaleString();
+
+  el.style.color = "#00ff99";
+
+  setTimeout(() => {
+    el.style.color = "#f3ba2f";
+  }, 500);
+}
+
+// تحديث الأسعار كل ثانيتين (محاكاة)
+setInterval(() => {
+
+  prices.btc += Math.floor(Math.random() * 300 - 150);
+  prices.eth += Math.floor(Math.random() * 20 - 10);
+  prices.bnb += Math.floor(Math.random() * 8 - 4);
+  prices.sol += Math.floor(Math.random() * 5 - 2);
+
+  updatePrice("btc", prices.btc);
+  updatePrice("eth", prices.eth);
+  updatePrice("bnb", prices.bnb);
+  updatePrice("sol", prices.sol);
+
+}, 2000);
+
+// رسالة عند الضغط على الأزرار
+document.querySelectorAll(".btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    alert("هذه نسخة تجريبية من NovaTrade.");
+  });
+});
