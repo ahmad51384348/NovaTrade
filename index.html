@@ -87,7 +87,14 @@ $165
 
 </section>
 <section class="trading-panel">
+<div class="coin-selector">
+  <button onclick="changeChart('BINANCE:BTCUSDT')">BTC</button>
+  <button onclick="changeChart('BINANCE:ETHUSDT')">ETH</button>
+  <button onclick="changeChart('BINANCE:BNBUSDT')">BNB</button>
+  <button onclick="changeChart('BINANCE:SOLUSDT')">SOL</button>
+</div>
 
+<div id="tv_chart_container" style="height:500px;"></div>
 <div class="chart-box">
 <h2>📈 الرسم البياني</h2>
 <div class="chart-placeholder">
