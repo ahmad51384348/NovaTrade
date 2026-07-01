@@ -1,0 +1,2 @@
+# NovaTrade
+Private
