@@ -81,3 +81,30 @@ document.querySelectorAll(".btn").forEach(btn => {
     alert("هذه نسخة تجريبية من NovaTrade.");
   });
 });
+let widget;
+
+function changeChart(symbol){
+
+    document.getElementById("tv_chart_container").innerHTML="";
+
+    widget = new TradingView.widget({
+        container_id:"tv_chart_container",
+        width:"100%",
+        height:500,
+        symbol:symbol,
+        interval:"30",
+        timezone:"Etc/UTC",
+        theme:"dark",
+        style:"1",
+        locale:"ar",
+        toolbar_bg:"#0b0e11",
+        enable_publishing:false,
+        hide_top_toolbar:false,
+        allow_symbol_change:true
+    });
+
+}
+
+window.onload = function(){
+    changeChart("BINANCE:BTCUSDT");
+};
