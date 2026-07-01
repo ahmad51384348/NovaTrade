@@ -8,7 +8,6 @@
 <title>NovaTrade</title>
 
 <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -29,100 +28,82 @@
 
 <a href="wallet.html">المحفظة</a>
 
-<a href="login.html">دخول</a>
-
 </nav>
+
+<div>
+
+<a class="login" href="login.html">
+دخول
+</a>
 
 <a class="btn" href="register.html">
 إنشاء حساب
 </a>
+
+</div>
 
 </header>
 
 <section class="hero">
 
 <h1>
-تداول العملات الرقمية بثقة
+منصة NovaTrade
 </h1>
 
 <p>
-منصة NovaTrade تمنحك تجربة تداول حديثة وسريعة وآمنة.
+منصة حديثة لتداول العملات الرقمية بسرعة وأمان.
 </p>
 
-<a href="register.html" class="btn">
+<a class="btn hero-btn" href="register.html">
 ابدأ الآن
 </a>
 
 </section>
 
-<section class="cards">
+<section class="market">
+
+<h2>
+🔥 العملات الأكثر تداولًا
+</h2>
+
+<div class="cards">
 
 <div class="card">
+
 <h3>Bitcoin</h3>
-<div class="price green" id="btc">
+
+<div id="btc" class="price">
 $118,000
 </div>
+
 </div>
 
 <div class="card">
+
 <h3>Ethereum</h3>
-<div class="price green" id="eth">
+
+<div id="eth" class="price">
 $3,000
 </div>
+
 </div>
 
 <div class="card">
+
 <h3>BNB</h3>
-<div class="price green" id="bnb">
+
+<div id="bnb" class="price">
 $700
 </div>
+
 </div>
 
 <div class="card">
+
 <h3>Solana</h3>
-<div class="price green" id="sol">
+
+<div id="sol" class="price">
 $165
 </div>
-</div>
 
-</section>
-<section class="trading-panel">
-<div class="coin-selector">
-  <button onclick="changeChart('BINANCE:BTCUSDT')">BTC</button>
-  <button onclick="changeChart('BINANCE:ETHUSDT')">ETH</button>
-  <button onclick="changeChart('BINANCE:BNBUSDT')">BNB</button>
-  <button onclick="changeChart('BINANCE:SOLUSDT')">SOL</button>
-</div>
-
-<div class="chart-box">
-<h2>📈 الرسم البياني</h2>
-<div id="tv_chart_container" style="height:500px;"></div>
-
-</div>
-
-<div class="trade-box">
-
-<h2>التداول</h2>
-
-<input type="number" placeholder="الكمية">
-
-<button class="buy">
-شراء
-</button>
-
-<button class="sell">
-بيع
-</button>
-
-</div>
-</section>
-
-<footer>
-  © 2026 NovaTrade
-</footer>
-
-<script src="https://s3.tradingview.com/tv.js"></script>
-<script src="js/app.js"></script>
-
-</body>
-</html>
+</
